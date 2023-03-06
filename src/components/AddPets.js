@@ -1,10 +1,10 @@
 import { useState } from "react"
 import axios from "axios"
 import { useStore } from "zustand"
-import { petskeeper } from "../store/PetsKeeper"
+import { petsStore } from "../data/PetsKeeper"
 
 function AddPet({user_id}){
-    const pets = useStore(petskeeper)
+    const pets = useStore(petsStore)
     const [displayForm,setdisplayForm] = useState(false)
     const [newPet, setNewPet] = useState({
     "name":"",
@@ -17,8 +17,8 @@ function AddPet({user_id}){
     e.preventDefault()
     setdisplayForm(false)
     console.log(newPet)
-    axios.post(`https://philoxenia.onrender.com/pet`,newPet).then((r) =>
-    pets.setPetsKeeper([...pets.petsData, r.data])
+    axios.post(`https://ismahan-sinatra-backend.onrender.com/pet`,newPet).then((r) =>
+    pets.setPetsStore([...pets.petsList, r.data])
 );
     }
 
