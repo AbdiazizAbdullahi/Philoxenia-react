@@ -5,8 +5,8 @@ import Delete from "../componets/DeletePets";
 import Edit from "../componets/EditPets";
 import AddPet from "../componets/AddNewPets"
 import { Link } from "react-router-dom";
-import axios from "axios";
-import { useState,useEffect } from "react";
+// import axios from "axios";
+// import { useState,useEffect } from "react";
 
 function Mypets() {
   const myPets = useStore(petsStore);

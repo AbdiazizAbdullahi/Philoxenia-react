@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Register from "../componets/RegisterUsers";
-import Login from "../componets/LoginUser";
+import Register from "../models/Register";
+import Login from "../models/Login";
 
 function Home() {
   const [displayRegister,displayLogin] = useState(true)
