@@ -1,9 +1,8 @@
 import './CSS/App.css';
-import Home from './models';
-import AllPets from './views/PetsGallery';
+import Home from './models/Home';
+import AllPets from './models/Allpets';
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-import Mypets from './views/UsersPets';
-
+import Mypets from './models/Mypets';
 
 
 function App() {
