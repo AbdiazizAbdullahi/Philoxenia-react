@@ -10,7 +10,7 @@ function Login() {
   const [users,setUsers] = useState([])
   console.log(users)
   useEffect(()=>{
-   axios.get("https://ismahan-sinatra-backend.onrender.com").then((r) =>
+   axios.get("https://philoxenia.onrender.com").then((r) =>
     setUsers(r.data)
    )
   },[])
