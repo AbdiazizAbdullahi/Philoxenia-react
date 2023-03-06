@@ -1,9 +1,9 @@
 import { useStore } from "zustand";
-import { petsStore } from "../data/PetsKeeper";
-import PetCard from "../componets/PetsCard";
-import Delete from "../componets/DeletePets";
-import Edit from "../componets/EditPets";
-import AddPet from "../componets/AddNewPets"
+import { petsStore } from "../store/PetsKeeper";
+import PetCard from "../components/Petcard";
+import Delete from "../components/DeletePets";
+import Edit from "../components/Edit";
+import AddPet from "../components/Edit"
 import { Link } from "react-router-dom";
 // import axios from "axios";
 // import { useState,useEffect } from "react";
