@@ -1,5 +1,5 @@
 import { useStore } from "zustand";
-import { petsStore } from "../data/PetsKeeper";
+import { petsStore } from "../store/PetsKeeper";
 
 
 function PetCard({ pet }) {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import {useEffect} from "react"
 import axios from "axios";
 import { useStore } from "zustand";
-import {  petsStore } from "../data/PetsKeeper";
+import {  petsStore } from "../store/PetsKeeper";
 
 function Login() {
   const pets = useStore(petsStore)

@@ -1,10 +1,10 @@
 import { useStore } from "zustand";
-import { petskeeper } from "../store/PetsKeeper";
+import { petsStore } from "../store/PetsKeeper";
 import { useState } from "react";
 import axios from "axios";
 
 function Edit({pet}){
-const pets = useStore(petskeeper)
+const pets = useStore(petsStore)
 const [displayForm,setdisplayForm] = useState(false)
 const [changePet, setchangePet] = useState({
 "name" : "",
@@ -21,7 +21,7 @@ let other_pets = pets.petsData.filter((thispet)=>{
 })
 console.log(other_pets)
 axios
-.put(`https://ismahan-sinatra-backend.onrender.com/pets/${pet.id}`,changePet)
+.put(`https://philoxenia.onrender.com/pets/${pet.id}`,changePet)
 .then((r) => pets.setPetsKeeper([...other_pets, changePet])
 );
 }

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useStore } from "zustand";
-import { petsStore } from "../data/PetsKeeper";
+import { petsStore } from "../store/PetsKeeper";
 
 function Search(){
 const pets = useStore(petsStore)
