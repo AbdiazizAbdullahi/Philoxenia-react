@@ -1,12 +1,12 @@
-import PetCard from "../componets/PetsCard";
+import PetCard from "../components/Petcard";
 import { useStore } from "zustand";
-import { petsStore} from "../data/PetsKeeper";
-import Search from "../componets/SearchForPets";
+import { petsStore} from "../store/PetsKeeper";
+import Search from "../components/Search";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import AddPet from "../componets/AddNewPets";
+// import AddPet from "../components/AddPets";
 
 function AllPets() {
   const pets = useStore(petsStore);
