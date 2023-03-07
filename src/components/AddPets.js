@@ -1,7 +1,7 @@
 import { useState } from "react"
 import axios from "axios"
 import { useStore } from "zustand"
-import { petsStore } from "../data/PetsKeeper"
+import { petsStore } from "../store/PetsKeeper"
 
 function AddPet({user_id}){
     const pets = useStore(petsStore)
@@ -10,7 +10,7 @@ function AddPet({user_id}){
     "name":"",
     "breed": "", 
     "image_url": "",
-    "user_id":user_id
+    "user_id": user_id
     })
     //console.log(newPet)
     const handleSubmit = (e)  =>{

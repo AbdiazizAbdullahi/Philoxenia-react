@@ -9,7 +9,7 @@ const [displayForm,setdisplayForm] = useState(false)
 const [changePet, setchangePet] = useState({
 "name" : "",
 "breed" : "",
-"image_url" : "",
+"image" : "",
 "user_id" : pet.user_id
 })
 console.log(changePet)
@@ -38,7 +38,7 @@ if(displayForm === false){
     setchangePet({...changePet, "breed" : e.target.value})
     }}></input>
     <input type="url" placeholder="add image" onChange={(e) =>{
-    setchangePet({...changePet, "image_url" : e.target.value})
+    setchangePet({...changePet, "image" : e.target.value})
     }}></input>
     <button type="submit">Update</button>
     </form>

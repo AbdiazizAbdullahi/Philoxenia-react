@@ -3,7 +3,7 @@ import axios from "axios"
 //
 function Register({changeForm}){
     const [newPetOwner,setnewPetOwner] = useState({
-        "username" :"",
+        "name" :"",
         "password" : ""
     })
     console.log(newPetOwner)
@@ -17,7 +17,7 @@ function Register({changeForm}){
         <form onSubmit={handleSubmit} className="signup">
             <h2 className="sign">Sign Up</h2>
            
-            <input type="text" placeholder="username"onChange={(e) => setnewPetOwner({...newPetOwner,username:e.target.value})} className="username"></input>
+            <input type="text" placeholder="name"onChange={(e) => setnewPetOwner({...newPetOwner,name:e.target.value})} className="name"></input>
             
             
             <input type="password" placeholder=" password"  onChange={(e) => setnewPetOwner({...newPetOwner,password:e.target.value})} className="password"></input>

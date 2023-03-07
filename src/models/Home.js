@@ -11,11 +11,11 @@ if(displayRegister === true){
   return (<>
     <h1>Petfinder</h1>
     <Register changeForm={changeForm}/>
-    <p onClick={changeForm} className="lUser">Already registered? 
+    <span onClick={changeForm} className="lUser">Already registered? 
     <div className="hover">
     Go to login
     </div>
-    </p>
+    </span>
     
     </>);
 }else{

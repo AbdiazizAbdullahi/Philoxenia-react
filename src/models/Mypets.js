@@ -3,12 +3,12 @@ import { petsStore } from "../store/PetsKeeper";
 import PetCard from "../components/Petcard";
 import Delete from "../components/DeletePets";
 import Edit from "../components/Edit";
-import AddPet from "../components/Edit"
+import AddPet from "../components/AddPets"
 import { Link } from "react-router-dom";
 // import axios from "axios";
 // import { useState,useEffect } from "react";
 
-function Mypets() {
+function Mypets(){
   const myPets = useStore(petsStore);
 
   return (
@@ -21,7 +21,7 @@ function Mypets() {
            all pets
         </Link>
         <Link to="/" className="link">
-          Home
+          Logout
         </Link>
         <div className="add-pet">
 

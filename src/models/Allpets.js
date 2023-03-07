@@ -25,8 +25,9 @@ function AllPets() {
   return (
     <>
       <div className="header">
-        <h1 className="title">Petfinder</h1>
-        <Link exact to="/" className="link">Home</Link>
+        <h1 className="title">Philoxenia</h1>
+        <Link exact to="/" className="link">Logout</Link>
+        <Link exact to="/mypets" className="link">Mypets</Link>
         <Search />
       </div>
       <div className="pets-container">
